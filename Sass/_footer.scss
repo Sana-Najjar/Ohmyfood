@@ -1,0 +1,38 @@
+.PiedDuPage {
+    background-color: #353535;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    &__titre{
+        font-family: Shrikhand;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+@media screen and (min-width:768px) {
+
+    .PiedDuPage {
+        text-align: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin-left: 30px;
+            }
+        }
+
+    }
+}

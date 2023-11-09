@@ -1,0 +1,41 @@
+@import "mixins";
+.btn {
+    display: inline-block;
+    margin-top: 27px;
+    padding: 13px 18.75px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    @include couleur-degrade;
+    @include ombre-boite;
+    border: transparent;
+    &:hover {
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, $couleur-primaire -5.2%,$couleur-secondaire 110.74%);
+    }
+}
+.button__like {
+    font-size: 25px;
+    -webkit-text-stroke: 1px black;
+    transition: color 1s;
+    background: linear-gradient(160deg, $couleur-secondaire, $couleur-primaire);
+    -webkit-background-clip: text;
+    width: 28px;
+    z-index: 0;
+    position: relative;
+    padding: 0;
+    border: transparent 0px solid;
+   color: #fff;
+   &:hover {
+    color: transparent;
+    -webkit-text-stroke-color: $couleur-primaire;
+    -webkit-text-stroke: 1px white;
+   }
+   &:active {
+    color: transparent;
+    -webkit-text-stroke-color: $couleur-primaire;
+   }
+} 
+   

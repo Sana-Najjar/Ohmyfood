@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1400px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 197px;
+  padding: 14px;
+}
+
+.HeadLocation {
+  display: flex;
+  background: var(--Grey-2, #EAEAEA);
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ville {
+  border-style: none;
+  background-color: #EAEAEA;
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  padding-left: 17px;
+}
+
+.vector {
+  width: 12px;
+  height: 16px;
+}
+
+.presentation {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 0 57px 0;
+}
+.presentation__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 39px;
+  margin-bottom: 12px;
+}
+.presentation p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Fonctionnement {
+  margin-top: 48px;
+  padding-left: 20px;
+  padding-bottom: 68px;
+}
+.Fonctionnement__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 26px;
+}
+
+.Fonctionnement__etape {
+  width: 90%;
+  height: 72px;
+  position: relative;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  gap: 4%;
+}
+.Fonctionnement__etape__numero {
+  margin-bottom: -5px;
+  padding: 3px 7px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: absolute;
+  right: 96%;
+}
+.Fonctionnement__etape__titre {
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.Fonctionnement__etape__icon {
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 14px 66px 14px;
+  background-color: #F6F6F6;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 26px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.restaurants__bloc {
+  width: 90%;
+  margin: auto;
+}
+
+.restaurants__cards {
+  flex-direction: column;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 251px;
+  margin-bottom: 18px;
+}
+.restaurants__cards--img {
+  position: relative;
+  height: 175px;
+}
+.restaurants__cards--img img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants__cards--img--markerinfo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 15px;
+  top: 12px;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #278870;
+}
+.restaurants__cards--info {
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  min-height: 75px;
+  padding: 15px;
+}
+.restaurants__cards--info--text {
+  width: 90%;
+}
+.restaurants__cards--info h3, .restaurants__cards--info p {
+  margin: 0;
+}
+.restaurants__cards--info h3 {
+  width: 267px;
+  height: 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.restaurants__cards--info p {
+  height: 24px;
+  font-weight: 300;
+  font-size: 17px;
+}
+.restaurants__cards--like {
+  position: absolute;
+  top: 76%;
+  right: 7%;
+  font-size: 25px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 27px;
+  padding: 13px 18.75px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  border: transparent;
+}
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+.button__like {
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
+  transition: color 1s;
+  background: linear-gradient(160deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  width: 28px;
+  z-index: 0;
+  position: relative;
+  padding: 0;
+  border: transparent 0px solid;
+  color: #fff;
+}
+.button__like:hover {
+  color: transparent;
+  -webkit-text-stroke-color: #9356DC;
+  -webkit-text-stroke: 1px white;
+}
+.button__like:active {
+  color: transparent;
+  -webkit-text-stroke-color: #9356DC;
+}
+
+.PiedDuPage {
+  background-color: #353535;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.PiedDuPage__titre {
+  font-family: Shrikhand;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.PiedDuPage li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.PiedDuPage a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .PiedDuPage {
+    text-align: center;
+  }
+  .PiedDuPage ul {
+    display: flex;
+    justify-content: center;
+  }
+  .PiedDuPage ul li {
+    margin-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
