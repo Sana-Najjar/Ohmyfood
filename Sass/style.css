@@ -204,6 +204,29 @@ header img {
   font-size: 25px;
 }
 
+@media all and (min-width: 1024px) {
+  .Fonctionnement {
+    margin-left: 40px;
+  }
+  .Fonctionnement__etapes {
+    flex-direction: row;
+    display: flex;
+    width: 90%;
+  }
+  .Fonctionnement__etape {
+    margin-right: 24px;
+  }
+  .restaurants__title {
+    margin-left: 40px;
+  }
+  .restaurants__bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+}
 .btn {
   display: inline-block;
   margin-top: 27px;
@@ -266,17 +289,34 @@ header img {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .PiedDuPage {
     text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 30px;
   }
   .PiedDuPage ul {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin-right: 16px;
   }
   .PiedDuPage ul li {
-    margin-left: 30px;
+    margin-left: 16px;
   }
+  .PiedDuPage__titre {
+    margin-right: 25px;
+  }
+}
+header img {
+  width: 197px;
+  padding: 14px;
+}
+
+.page__restaurant__image {
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

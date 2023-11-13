@@ -206,3 +206,31 @@ header img {
        }
     
      }
+     @media all and (min-width: 1024px) {
+        .Fonctionnement {
+            margin-left: 40px;
+        }
+        .Fonctionnement__etapes {
+            flex-direction: row;
+            display: flex;
+            width: 90%;
+        }
+        .Fonctionnement__etape {
+            margin-right: 24px;
+         
+        }
+        .restaurants {
+            &__title {
+                margin-left: 40px;
+            }
+        }
+        .restaurants__bloc {
+            display: grid;
+            grid-template-columns:repeat(2, 1fr) ;
+            align-items: center;
+            column-gap: 100px;
+            row-gap: 50px;
+       
+     }
+    }
+     
