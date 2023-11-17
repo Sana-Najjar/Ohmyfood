@@ -1,9 +1,143 @@
-header img {
-    width: 197px;
-    padding: 14px;
+@import "mixins";
+header  {
+       position: relative;
+     a {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 17px;
+     }
 }
-.page__restaurant {
-    &__image {
-        width: 90%;
+.page__restaurant--image {
+       position: relative;
+       height: 230px;
+      & img {
+        width: 100%;
+        height: 107%;
+        object-fit: cover;
+      }
     }
+.container {
+    background-color: #F6F6F6;
+    position: relative;
+    border-radius: 25px 25px 0 0;
+    &__heading {
+        display: flex;
+        justify-content: space-around;
+       padding-top: 32px;
+       padding-left: 17px ;
+       
+       h1 {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: Shrikhand;
+         line-height: 25px;
+         
+       }
+    }
+    &__menus {
+      padding: 2% 5% 5% 5%;
+      
+    }
+    .menu {
+        margin-top: 40px;
+        &__titre {
+           font-size: 18px; 
+           font-weight: 300 ;
+           font-family: Roboto;
+           border-bottom:  3px solid $couleur-tertiaire;
+           width: 40px;
+           text-transform: uppercase
+        }
+        &__cartes {
+            background-color: white;
+            border-radius:15px ;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 12px 0;
+            cursor: pointer;
+            @include ombre-boite ;
+            overflow: hidden;
+            &:hover  .menu__cartes--checkout  {
+              margin-right: 0px;
+            } 
+            &:hover i {
+               transform: rotate(360deg);
+            }
+            &--info {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+               }
+            &--description {
+                overflow: hidden; 
+                white-space: nowrap;
+                width: 100%;
+                text-overflow: ellipsis;
+                h3 {
+                   font-size: 18px; 
+                   font-weight: 700;
+                   white-space: nowrap;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                }
+                p{
+                   font-size: 16px; 
+                   font-weight: 300;
+                   white-space: nowrap;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                }
+            }
+            &--price {
+               display: flex;
+               align-items: flex-end;
+               p {
+                font-weight: 700;
+               }
+            }
+            &--checkout {
+                display: flex;
+                align-items: center;
+                margin-right: -20%;
+                border-radius: 0 15px 15px 0;
+                background-color:$couleur-tertiaire ;
+                color:white;
+                transition: margin-right 2s ;
+                width: 20%;
+                justify-content: center;
+                i {
+                  transition: transform 1s ease-in-out;
+                }
+            }
+        }
+    }
+   }
+
+.commande {
+   display: flex;
+   justify-content: center;
+  background-color: #F6F6F6;
+   padding-bottom: 40px;
+}
+@media all and (min-width: 1024px) {
+    .container {
+        width: 70%;
+        transform: translateX(-50%);
+         left: 50%;
+         &__heading {
+            justify-content: center;
+            h1 {
+                padding-right: 24px;
+            }
+         }
+      .menu  {
+         width: 80%;
+         transform: translateX(13%);
+         }
+      }
 }

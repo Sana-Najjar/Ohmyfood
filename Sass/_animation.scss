@@ -1,0 +1,48 @@
+.entree_carte {
+    animation: apparition-entree 1s ease 1 ;
+}
+@keyframes apparition-entree {
+    0% {
+        opacity: 0;
+        transform: translateY(4Opx);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+.plat_carte {
+    animation: apparition-plat 1s ease 1;
+}
+@keyframes apparition-plat {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    30% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dessert_carte {
+    animation: apparition-dessert 1s ease 1;
+}
+@keyframes apparition-dessert {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
