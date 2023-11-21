@@ -25,8 +25,6 @@ header  {
         display: flex;
         justify-content: space-around;
        padding-top: 32px;
-       padding-left: 17px ;
-       
        h1 {
         font-size: 28px;
         font-weight: 400;
@@ -40,14 +38,15 @@ header  {
       
     }
     .menu {
-        margin-top: 40px;
+        margin-top: 23px;
         &__titre {
            font-size: 18px; 
            font-weight: 300 ;
            font-family: Roboto;
            border-bottom:  3px solid $couleur-tertiaire;
            width: 40px;
-           text-transform: uppercase
+           text-transform: uppercase;
+           padding-bottom: 4px;
         }
         &__cartes {
             background-color: white;
@@ -112,6 +111,7 @@ header  {
                 justify-content: center;
                 i {
                   transition: transform 1s ease-in-out;
+                  font-size: 23px;
                 }
             }
         }

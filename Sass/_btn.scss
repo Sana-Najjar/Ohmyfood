@@ -11,6 +11,7 @@
     @include couleur-degrade;
     @include ombre-boite;
     border: transparent;
+    height: 50px;
     &:hover {
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, $couleur-primaire -5.2%,$couleur-secondaire 110.74%);

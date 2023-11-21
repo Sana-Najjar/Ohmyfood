@@ -5,8 +5,7 @@
 }
 
 body {
-  min-width: 320px;
-  max-width: 1400px;
+  width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -44,6 +43,7 @@ header img {
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  box-shadow: inset 0 2px 2px #d5d5d5;
 }
 
 .ville {
@@ -63,13 +63,13 @@ header img {
 .presentation {
   background-color: #f7f7f7;
   text-align: center;
-  padding: 20px 0 57px 0;
+  padding: 20px 0 30px 0;
 }
 .presentation__title {
   font-size: 24px;
   font-weight: 700;
-  padding-top: 39px;
-  margin-bottom: 12px;
+  padding-top: 18px;
+  margin-bottom: 28px;
 }
 .presentation p {
   font-size: 18px;
@@ -79,7 +79,7 @@ header img {
 .Fonctionnement {
   margin-top: 48px;
   padding-left: 20px;
-  padding-bottom: 68px;
+  padding-bottom: 50px;
 }
 .Fonctionnement__title {
   font-size: 24px;
@@ -205,6 +205,9 @@ header img {
 }
 
 @media all and (min-width: 1024px) {
+  .presentation h1 {
+    font-size: 38px;
+  }
   .Fonctionnement {
     margin-left: 40px;
   }
@@ -289,6 +292,7 @@ header img {
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   border: transparent;
+  height: 50px;
 }
 .btn:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -389,7 +393,6 @@ header a {
   display: flex;
   justify-content: space-around;
   padding-top: 32px;
-  padding-left: 17px;
 }
 .container__heading h1 {
   font-size: 28px;
@@ -401,7 +404,7 @@ header a {
   padding: 2% 5% 5% 5%;
 }
 .container .menu {
-  margin-top: 40px;
+  margin-top: 23px;
 }
 .container .menu__titre {
   font-size: 18px;
@@ -410,6 +413,7 @@ header a {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   text-transform: uppercase;
+  padding-bottom: 4px;
 }
 .container .menu__cartes {
   background-color: white;
@@ -476,6 +480,7 @@ header a {
 }
 .container .menu__cartes--checkout i {
   transition: transform 1s ease-in-out;
+  font-size: 23px;
 }
 
 .commande {
