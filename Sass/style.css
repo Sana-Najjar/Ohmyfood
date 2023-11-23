@@ -237,7 +237,6 @@ header img {
 @keyframes apparition-entree {
   0% {
     opacity: 0;
-    transform: translateY(4Opx);
   }
   100% {
     opacity: 1;
@@ -530,10 +529,8 @@ header a {
   align-items: center;
   justify-content: center;
   overflow: visible;
-  top: center;
   background: linear-gradient(0deg, #9356dc 33%, #ff79da 100%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
   font-family: shrikhand;
   padding: 0;
