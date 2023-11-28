@@ -31,12 +31,12 @@
    color: #fff;
    &:hover {
     color: transparent;
-    -webkit-text-stroke-color: $couleur-primaire;
+   // -webkit-text-stroke-color: $couleur-primaire;
     -webkit-text-stroke: 1px white;
    }
-   &:active {
+   /*&:active {
     color: transparent;
     -webkit-text-stroke-color: $couleur-primaire;
-   }
+   }*/
 } 
    
